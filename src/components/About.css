@@ -1,0 +1,35 @@
+.about-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://imgproxy.ra.co/_/quality:66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL3Byb2ZpbGVzL3NxdWFyZS9za2V0Y2guanBnP2RhdGVVcGRhdGVkPTE2NTc4OTk3NzEwMDA=") no-repeat center center/cover;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay for text readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.about-text {
+  color: #fff;
+  max-width: 650px;
+  text-align: center;
+}
+
+.about-text h1 {
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: #acb853;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+}

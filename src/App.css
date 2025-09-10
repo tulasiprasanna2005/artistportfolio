@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+/* ---- GLOBAL ---- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #e0d6d6;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ---- APP LAYOUT ---- */
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ---- GALLERY ---- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ---- CONTACT FORM ---- */
+form {
+  max-width: 400px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #cce034;
+}
+
+button {
+  background: #cce034;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #b6ca2e;
 }
